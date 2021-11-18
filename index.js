@@ -7,6 +7,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET)
 const fileUpload = require('express-fileupload')
 const admin = require("firebase-admin");
 
+//doctor portal server site codes
 const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
